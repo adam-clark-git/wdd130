@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Page</title>
+</head>
+<body>
+    <button id="click-me-btn"> Click me!</button>
+    <script>
+        var num = 1;
+        const button = document.getElementById('click-me-btn')
+        button.onclick = function () {
+            num = num * 2
+            button.textContent = "" + num;
+        };
+    </script>
+</body>
+</html>

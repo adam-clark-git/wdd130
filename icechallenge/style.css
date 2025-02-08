@@ -1,0 +1,20 @@
+body {
+    padding:0%;
+    background-color: #737373;
+    border:0px;
+    margin:0px;
+}
+#main_image {
+    margin: 0px;
+    width: 100%;
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin:50px 0px;
+}
+.bubble {
+    border: solid #444444 15px;
+    width:300px;
+    border-radius: 100%;
+}
