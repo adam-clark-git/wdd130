@@ -55,9 +55,14 @@ nav a:hover {
 }
 .msg {
     background-color: #FFCAD4;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #F4ACB7;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     text-decoration: none;
@@ -99,10 +104,6 @@ p, a {
 p {
     font-size: 0.8em;
 }
-.msg {
-    font-size: 0.8em;
-    line-height: 1.5em;
-}
 h2 {
     margin: 0;
 }
@@ -118,17 +119,8 @@ nav a {
     padding-top: 10px;
 }
    
-.msg {
-    padding: 35px;
-}
-   
 .msg p {
     padding-bottom: 15px;
-}
-   
-footer {
-    padding: 25px 50px;
-    margin-top: 200px;
 }
    
 footer .social img {
