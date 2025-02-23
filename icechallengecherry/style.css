@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h3 {
+    color: #9c0e11;
+    font-size: 5em;
+    letter-spacing: 10px;
+    padding: 400px 50px 50px 150px;
+}
+h1 {
+    padding:50px;
+    display: inline;
+    position:fixed;
+    top: 50px;
+    font-size: 10em;
+    letter-spacing: 20px;
+}
+#cherry {
+    grid-column: 1;
+}
+.border1 {
+    background-color: white;
+    grid-column: 1;
+}
+.border2 {
+    background-color: #b9b8b9;
+    grid-column: 2;
+}
