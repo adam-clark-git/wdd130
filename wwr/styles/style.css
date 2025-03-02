@@ -90,7 +90,7 @@ nav a:hover {
 footer {
     background-color: #F4ACB7;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,7 +144,7 @@ h2 {
     align-self: center;
 }
 nav a {
-    padding: 35px;
+    padding: 25px;
 }
 
    
@@ -191,6 +191,30 @@ footer .social img {
     grid-column: 8/10;
     grid-row:2/3;
 }
+
+
+#faq {
+    padding: 20px;
+    background-color: #FFCAD4;
+}
+.question {
+    background-color: #F4ACB7;
+    padding: 10px;
+    font-size: 1.5em;
+}
+.answer {
+    padding: 20px;
+    font-size: 0.9em;
+}
+#landscape {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
