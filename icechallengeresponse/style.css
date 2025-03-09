@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+nav {
+    background-color: blueviolet;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 50px;
+}
+nav a:hover {
+    background-color: rgb(107, 0, 207);
+}
+nav ul {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+nav, nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.article {
+    width: 400px;
+    height:600px;
+    background-color:aliceblue;
+    border-radius: 40px;
+}
+.article-img {
+    width:100%;
+    border-radius: 40px;
+}
+.article-footer {
+    
+}
+@media screen and (max-width:900px) {
+    nav, nav ul {
+        flex-direction: column;
+    } 
+}
