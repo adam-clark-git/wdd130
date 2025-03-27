@@ -10,37 +10,74 @@
     <header>
         <nav>
             <img src="images/handcuffs.jpg" alt="logo" id="logo">
-            <a href="subject1.html"> Subject 1</a>
-            <a href="site-plan.html"> Site Plan</a>
-            <a href="aboutus.html"> About Us </a>
-            <a href="https://www.fbi.gov/wanted/topten"> Official Site</a>
+            <a href="index.html"> <h3>Main Page </h3></a>
+            <a href="subject1.html"> <h3> Subject 1</h3></a>
+            <a href="site-plan.html"> <h3>Site Plan</h3></a>
+            <a href="aboutus.html"> <h3>About Us</h3> </a>
+            <a href="https://www.fbi.gov/wanted/topten"> <h3>Official Site</h3></a>
         </nav>
     </header>
     
     <main class="subjectpage">
-        <img src="images/alejandrorosales.png" alt="mainsubjectpicture" class="mainsubject">
-        <img src="images/alejandrorosales2.png" alt="subjectpicture2" class="altsubject">
-        <h1> Description</h1>
-        <p>
-            Date(s) of Birth Used 	November 26, 1998
-            Place of Birth: 	Arizona
-            Hair: 	Black
-            Eyes: 	Brown
-            Height: 	5'6"
-            Weight: 	Approximately 180 to 190 pounds
-            Sex: 	Male
-            Race: 	White (Hispanic)
-            Nationality: 	American
-            Languages: 	English, Spanish
-        </p>
-        <h1> Crimes</h1>
-        <p>
-            Alejandro Rosales Castillo is wanted for his alleged involvement in the murder of a co-worker in Charlotte, North Carolina, in 2016. The female victim’s vehicle
-was located at a bus station in Phoenix, Arizona, on August 15, 2016. On August 17, 2016, the victim’s body was located in a wooded area in Cabarrus County,
-North Carolina, with a gunshot wound to the head
-        </p>
-        <h1> Other</h1>
-        <p> None so far</p>
+        <div class="subjectcollection">
+             <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                <div class="numbertext">1 / 2</div>
+                    <img src="images/alejandrorosales.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">2 / 2</div>
+                    <img src="images/alejandrorosales2.png" style="width:100%">
+                </div>
+            
+
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/alejandrorosales.png" style="width:100%" onclick="currentSlide(1)" alt="Image 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/alejandrorosales2.png" style="width:100%" onclick="currentSlide(2)" alt="Image 2">
+                </div>
+                </div>
+            </div> 
+        </div>
+        <div class="subjectdescription">
+            <h1> Description</h1>
+            <ul>
+                <li>Date(s) of Birth Used: 	November 26, 1998</li>
+                <li>Place of Birth: Arizona</li>
+                <li>Hair: Black</li>
+                <li>Height: 5'6"</li>
+                <li> Weight: Approximately 180 to 190 pounds</li>
+                <li>Sex: Male</li>
+                <li>Race: White (Hispanic)</li>
+                <li>Nationality: American</li>
+                <li>Languages: English, Spanish</li>
+            </ul>
+            <h1> Crimes</h1>
+            <p>
+                Alejandro Rosales Castillo is wanted for his alleged involvement in the murder of a co-worker in Charlotte, North Carolina, in 2016. The female victim’s vehicle
+    was located at a bus station in Phoenix, Arizona, on August 15, 2016. On August 17, 2016, the victim’s body was located in a wooded area in Cabarrus County,
+    North Carolina, with a gunshot wound to the head
+            </p>
+            <h1> Other</h1>
+            <p> None so far</p>
+        </div>
 
 
     </main>
@@ -62,5 +99,38 @@ North Carolina, with a gunshot wound to the head
             </a>
         </div>
     </footer>
-</body>
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+    } 
+    </script>
+    </body>
+
 </html>
