@@ -92,8 +92,13 @@ footer {
     clear:left
 }
 
+.about {
+  width: 200px;
+}
 
-
+.about-body {
+  padding-left: 30px;
+}
 
 
 * {
